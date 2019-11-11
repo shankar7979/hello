@@ -1,0 +1,54 @@
+  Clarification:
+[ To TEST your AJAX : ]
+Assume => you have placed the following files in the "root" sub-folder inside your USBWebServer (make sure you rename the "index.php" to some other filename) : 
+(a) A3_CtryData_dtd_Sample.xml (edit to remove all references to external xsl, dtd), 
+
+(b) A3_CtryData_xsd_Sample.xml (edit to remove all references to external xsl, xsd),  
+
+(c) A3_CtryData_AJAX-XML.html, 
+
+(d) A3_CtryData_AJAX-JSON.html 
+
+(e) IMPT : no XSL files should be present in the same folder, when you are testing AJAX !!!
+Start your USBWebServer.exe (read the online ref, or manual on how to use USBWebServer)
+From there, you access via "http://localhost:8080/" to open up A3_CtryData_AJAX-XML.html to test your XML file retrieval
+
+Example #1 : 
+you click on a button to retrieve A3_CtryData_dtd_Sample.xml, and display it in HTML table, with the SAME DISPLAY FORMAT (i.e. same column data, same sorting criteria) as those explained earlier for "region-fmt-1.xsl" format
+
+Example #2 : 
+you click on another button to retrieve A3_CtryData_dtd_Sample.xml, and display it in HTML table, with the SAME DISPLAY FORMAT (i.e. same column data, same sorting criteria) as those explained earlier for "population-fmt-2.xsl" format
+
+Note : in all examples, all
+- XML data retrieval, 
+- parsing from XML/JSON data into Javascript Object, 
+- writing function to display contents of Javascript Object into a HTML table (with the same formatting as those described in various *.xsl files), 
+
+are all done by javascripts! 
+(One of the analogous example is "market1.html" within the "CSIT128 Resources" downloaded from Yahoo Groups)
+
+
+IMPT NOTE : You are NOT ALLOWED TO ...
+1) Put all your *.xsl files in the same folder as your AJAX HTML files
+2) Retrieve the XML file, and
+3) either within same browser window, or spawn another window, and open the XML file, and make it reference the existing *.xsl files in the same folder. THIS IS NOT ALLOWED !!!
+
+
+Remember, for the purposes of testing your AJAX implementation, you are required to : 
+a) edit your XML files to remove all references to external xsl, dtd, xsd
+b) simulate retrieval of the (edited) XML files in step a), and purely use javascripts to parse XML data into Javascript Object, and display contents of Javascript Object onto the same HTML web-page!
+c) no usage of XSLfiles is allowed!
+
+Finally, everything mentioned above, applies to the case when you are testing A3_CtryData_AJAX-JSON.html as well !!!
+
+-- 
+Thanks & Regards
+Swarnalatha L
+Senior HR Manager     
+
+P: +91 7448616880  M: +91 7448615956
+W: www.semibreve.co.in E: semibreveleads@gmail.com
+
+A: # 1 - MGR Street, TP Nagar, 
+Entrance of Ramasamy Street, 100 fts Road Taramani, Chennai - 600 113, India.
+
